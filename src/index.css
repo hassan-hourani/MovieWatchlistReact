@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inter;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+}
+.header h1, .header h4 {
+  color: white;
+}
+.search {
+  margin-top: 22.5vh;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center; 
+}
+
+span img {
+  /* background: url("./assets/icons/search-icon.png") center left no-repeat; */
+  transform: translateX(135%); 
+  align-self: center;
+  justify-self: center;
+  margin-top: 0.2rem;
+
+}
+.search input {    
+  /* background: url("./assets/icons/search-icon.png") center left no-repeat; */
+  margin-right: 0;  
+  border-radius: 4px 0px 0px 4px;
+  background-color: #2e2e2e;
+  border: none;
+  color: #a5a5a5;
+  padding: 0.5rem 2rem;
+}
+  .search button {    
+    background: #4B4B4B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    margin-left: 0;
+    height: 100%;
+    padding: 0.5rem 2rem;
+    }
+.main {
+  background-color: #121212;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+.explore-main {
+  color: #2e2e2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.results-main {
+  background-color: #121212;
+  color: white;
+  display: flex;
+  gap: 2vw;
+}
+.result-item {
+  align-self: center;
+}
+.poster {
+  max-width: 15vw;
+}
+.movie-information {
+align-self: center;
+}
+.movie-header-section {
+display: flex;
+gap: 2vw;
+}
+.movie-header-section h4 {
+  color: white;
+  }
+  .rating {
+    display: flex;
+    gap: 0.4vw;
+  }
+.movie-header-section img {
+  align-self: center;
+  }
+  .movie-header-section p {
+    align-self: center;
+    
+    }
+.movie-basics {
+  display: flex;
+  gap: 3vw;
+  }
+  .add-to-watchlist {
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    }
+  .movie-description {
+    text-align: left;
+    max-width: 35vw;
+  }
+  @media (max-width:500px) {
+    .movie-description {
+      max-width: 70vw;
+    }
+    
+  }
