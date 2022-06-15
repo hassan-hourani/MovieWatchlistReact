@@ -86,7 +86,7 @@ function Results(props) {
 <div className="results-main" id="results-main">
 
 <div className="result-item">
-    {if( props.name > 2)  poster}
+    
         {/* <img className="poster" id="poster" src={defaultPoster} alt="movie-poster"></img> */}
         </div>
         <div className="movie-information">
