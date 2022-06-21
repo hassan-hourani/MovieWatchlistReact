@@ -32,14 +32,16 @@ function Results(props) {
             )) 
     }, [resultsState])
 
+   
+
     // for (let y = 0; y < titleSearchState.length; y++) {
     //     document.getElementById("results-main").key = y
-    //     document.getElementById("poster").innerHTML = <img className="poster" id="poster" src={titleSearchState[y].poster} alt="movie-poster"></img>
-    //     document.getElementById("title").textContent = titleSearchState[y].title
-    //     document.getElementById("rating").textContent = titleSearchState[y].rating
-    //     document.getElementById("length").textContent = titleSearchState[y].runtime
-    //     document.getElementById("genre").textContent = titleSearchState[y].genre
-    //     document.getElementById("description").textContent = titleSearchState[y].plot
+    //     document.getElementById("poster").innerHTML = <img className="poster" id="poster" src={titleSearchState[y].Poster} alt="movie-poster"></img>
+    //     document.getElementById("title").textContent = titleSearchState[y].Title
+    //     document.getElementById("rating").textContent = titleSearchState[y].imdbRating
+    //     document.getElementById("length").textContent = titleSearchState[y].Runtime
+    //     document.getElementById("genre").textContent = titleSearchState[y].Genre
+    //     document.getElementById("description").textContent = titleSearchState[y].Plot
     //   }
     
     return (
@@ -47,26 +49,28 @@ function Results(props) {
 
 <div className="results-main" id="results-main">
     
-     
+        <ul id="myList">
+            <li>
         <div className="result-item">
-      <img className="poster" id="poster" src={myarray[0].Poster} alt="movie-poster"></img>
+      <img className="poster" id="poster"  alt="movie-poster"></img>
               </div>
               <div className="movie-information">
               <div className="movie-header-section">
-              <h4 id="title">{myarray[0].Title}</h4>
+              <h4 id="title"></h4>
               <div className="rating">
               <img src={goldenStar} alt="golden star"></img>
-              <p id="rating">{myarray[0].imdbRating}</p>
+              <p id="rating"></p>
               </div>
               </div>
               <div className="movie-basics">
-              <p id="length">{myarray[0].Runtime}</p>
-              <p  id="genre">{myarray[0].Genre}</p>
+              <p id="length"></p>
+              <p  id="genre"></p>
               <p className="add-to-watchlist"><img src={plus} alt="plus icon"></img><span>Watchlist</span></p>
               </div>
-              <p id="description" className="movie-description">{myarray[0].Plot}</p>
+              <p id="description" className="movie-description"></p>
               </div> 
-             
+              </li>
+              </ul>
       
 </div> 
 
