@@ -14,7 +14,7 @@ function App() {
   backgroundColor: "rgba(0, 0, 0, 0.8)",
     backgroundImage: `url(${bg})`
   };
-  function handelChange() {
+  function handelClick() {
     return (
 setSearchState(document.getElementById("search").value)
   )}
@@ -35,8 +35,8 @@ setSearchState(document.getElementById("search").value)
       <div className="search">
         
           <span><img alt="search icon" src={searchIcon}></img></span>
-     <input id="search" type="text" placeholder="Search here" onChange={handelChange}></input>
-     <button onClick={handelChange}>Search</button>
+     <input id="search" type="text" placeholder="Search here"></input>
+     <button onClick={handelClick}>Search</button>
      
       </div>
       <div className="main">
